@@ -1,14 +1,17 @@
-package net.fabricmc.example;
+package net.fabricmc.customarmour;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.Item;
 
-public class ExampleMod implements ModInitializer {
+public class customArmour implements ModInitializer {
+	// @Override
+	// public void onInitialize() {
+	// 	System.out.println("Mod initialized");
+
+	public static final Item TEST_ITEM = new Item(new FabricItemSettings().group(ItemGroup.MISC));
+
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		System.out.println("Hello Fabric world!");
+		Registry.register(Registry.ITEM, new Identifier("test", "test_item"), TEST_ITEM);
 	}
 }
