@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "customarmour",
+  "id": "testmod",
   "version": "${version}",
 
-  "name": "henos Custom Armour",
-  "description": "Adds new armours to the game",
+  "name": "Henry + Taj's Test Mod",
+  "description": "We are learning Java, thou shalt judgen't",
   "authors": [
-    "henos"
+    "Henry",
+    "Taj"
   ],
   "contact": {
     "homepage": "",
-    "sources": "https://github.com/henos1029/custom-armour"
+    "sources": "https://github.com/henos1029/test-mod"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/customarmour/icon.png",
+  "icon": "assets/testmod/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.customarmour.customArmour"
+      "com.henrytaj.testmod.testmod"
     ]
   },
   "mixins": [
-    "customarmour.mixins.json"
   ],
 
   "depends": {
