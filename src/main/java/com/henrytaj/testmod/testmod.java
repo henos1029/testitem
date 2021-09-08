@@ -8,6 +8,7 @@ public class testmod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+
         moditems.registerItems();
     }
 }
