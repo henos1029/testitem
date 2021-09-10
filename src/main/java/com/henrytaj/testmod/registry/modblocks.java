@@ -18,7 +18,7 @@ public class modblocks {
             .strength(15f,99999999999999999999999999999999999999f)
             .sounds(BlockSoundGroup.METAL)
             .luminance(999999999)
-            .jumpVelocityMultiplier(20f)
+            .jumpVelocityMultiplier(5f)
             );
 
     public static void registerBlocks(){
