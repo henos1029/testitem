@@ -1,5 +1,6 @@
 package com.henrytaj.testmod;
 
+import com.henrytaj.testmod.registry.modblocks;
 import com.henrytaj.testmod.registry.moditems;
 import net.fabricmc.api.ModInitializer;
 
@@ -10,5 +11,6 @@ public class testmod implements ModInitializer {
     public void onInitialize() {
 
         moditems.registerItems();
+        modblocks.registerBlocks();
     }
 }
